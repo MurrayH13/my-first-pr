@@ -31,7 +31,7 @@ cp ~/Downloads/README.md .
 2. In the upper-right corner of any page, select `➕`, and then select `New repository`.
 3. Name your repository `my-first-pr`.
    **IMPORTANT:** Do not initialize the repository with a `README`, `.gitignore`, or license.
-4. Note the name of your repository `URL` here: **<URL>**
+4. Note the name of your repository `URL` here: **[(https://github.com/MurrayH13/my-first-pr.git)]**
    You'll need this information later.
 
 ### Add the remote repository
@@ -39,7 +39,7 @@ cp ~/Downloads/README.md .
 1. In the terminal, add the URL of the repository you created on GitHub as the remote repository.
 
 ```bash
-git remote add origin <URL>
+git remote add origin https://github.com/MurrayH13/my-first-pr.git
 ```
 
 2. Check that the remote repository was added.
@@ -62,7 +62,7 @@ git remote -v
 
 ### Why are pull requests called "Pull Requests"? (wrong answer)
 
-Pull requests are so named basically because you are asking to _pull_ changes from a remote to your local repository. And that's because you have to ask permission to copy changes out of the repository, even if you have read access to that repository.
+Pull requests are so named basically because you are asking for a pull from your branch instead of pushing to the target repo/branch.   And that's because you have to ask permission to copy changes out of the repository, even if you have read access to that repository.
 
 <!--TODO: This answer is SO wrong, I think we need to fix it! -->
 
@@ -82,6 +82,8 @@ git switch -c fix/pr-definition
 ```
 
 2. Edit this file and address the two TODO items in two separate commits.
+Change 1
+Change 2
 
 ```bash
 git commit -am "Add forks to the PR definition"
